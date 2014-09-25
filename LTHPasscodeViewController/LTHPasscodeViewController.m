@@ -409,7 +409,7 @@
 	// It is also used to display the "Passcodes did not match" error message
     // if the user fails to confirm the passcode.
 	_failedAttemptLabel = [[UILabel alloc] initWithFrame: CGRectZero];
-	_failedAttemptLabel.text = @"1 Passcode Failed Attempt";
+	_failedAttemptLabel.text = @"輸入錯誤";
     _failedAttemptLabel.numberOfLines = 0;
 	_failedAttemptLabel.backgroundColor	= _failedAttemptLabelBackgroundColor;
 	_failedAttemptLabel.hidden = YES;
@@ -1122,10 +1122,10 @@
 	
 	if (_failedAttempts == 1) {
         _failedAttemptLabel.text =
-        NSLocalizedStringFromTable(@"1 Passcode Failed Attempt", _localizationTableName, @"");
+        NSLocalizedStringFromTable(@"輸入錯誤", _localizationTableName, @"");
     }
 	else {
-		_failedAttemptLabel.text = [NSString stringWithFormat: NSLocalizedStringFromTable(@"%i Passcode Failed Attempts", _localizationTableName, @""), _failedAttempts];
+		_failedAttemptLabel.text = [NSString stringWithFormat: NSLocalizedStringFromTable(@"輸入錯誤", _localizationTableName, @""), _failedAttempts];
 	}
 	_failedAttemptLabel.layer.cornerRadius = kFailedAttemptLabelHeight * 0.65f;
 	_failedAttemptLabel.clipsToBounds = true;
@@ -1197,7 +1197,7 @@
 	_enterPasscodeLabel.text = savedPasscode.length == 0 ? NSLocalizedStringFromTable(self.enterPasscodeString, _localizationTableName, @"") : NSLocalizedStringFromTable(self.enterNewPasscodeString, _localizationTableName, @"");
 	
 	_failedAttemptLabel.hidden = NO;
-	_failedAttemptLabel.text = NSLocalizedStringFromTable(@"Passcodes did not match. Try again.", _localizationTableName, @"");
+	_failedAttemptLabel.text = NSLocalizedStringFromTable(@"兩次輸入不相同，請重新輸入", _localizationTableName, @"");
 	_failedAttemptLabel.backgroundColor = [UIColor clearColor];
 	_failedAttemptLabel.layer.borderWidth = 0;
 	_failedAttemptLabel.layer.borderColor = [UIColor clearColor].CGColor;
@@ -1366,14 +1366,14 @@
 
 
 - (void)_loadStringDefaults {
-    self.enterOldPasscodeString = @"Enter your old passcode";
-    self.enterPasscodeString = @"Enter your passcode";
-    self.enablePasscodeString = @"Enable Passcode";
-    self.changePasscodeString = @"Change Passcode";
-    self.turnOffPasscodeString = @"Turn Off Passcode";
-    self.reenterPasscodeString = @"Re-enter your passcode";
-    self.reenterNewPasscodeString = @"Re-enter your new passcode";
-    self.enterNewPasscodeString = @"Enter your new passcode";
+    self.enterOldPasscodeString = @"輸入舊密碼";
+    self.enterPasscodeString = @"輸入密碼";
+    self.enablePasscodeString = @"設定密碼鎖";
+    self.changePasscodeString = @"更改密碼鎖";
+    self.turnOffPasscodeString = @"關閉密碼鎖";
+    self.reenterPasscodeString = @"再次輸入密碼";
+    self.reenterNewPasscodeString = @"再次輸入新密碼";
+    self.enterNewPasscodeString = @"輸入新密碼";
 }
 
 
