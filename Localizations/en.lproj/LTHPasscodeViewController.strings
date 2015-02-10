@@ -24,3 +24,5 @@
 "1 Passcode Failed Attempt" = "輸入錯誤";
 
 "%i Passcode Failed Attempts" = "輸入錯誤";
+
+"Unlock using Touch ID" = "使用指紋解鎖";
