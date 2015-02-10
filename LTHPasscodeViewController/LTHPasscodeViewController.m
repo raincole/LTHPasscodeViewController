@@ -1499,7 +1499,6 @@ options:NSNumericSearch] != NSOrderedAscending)
 
 
 - (void)_loadStringDefaults {
-<<<<<<< HEAD
     self.enterOldPasscodeString = @"輸入舊密碼";
     self.enterPasscodeString = @"輸入密碼";
     self.enablePasscodeString = @"設定密碼鎖";
@@ -1508,17 +1507,7 @@ options:NSNumericSearch] != NSOrderedAscending)
     self.reenterPasscodeString = @"再次輸入密碼";
     self.reenterNewPasscodeString = @"再次輸入新密碼";
     self.enterNewPasscodeString = @"輸入新密碼";
-=======
-    self.enterOldPasscodeString = @"Enter your old passcode";
-    self.enterPasscodeString = @"Enter your passcode";
-    self.enablePasscodeString = @"Enable Passcode";
-    self.changePasscodeString = @"Change Passcode";
-    self.turnOffPasscodeString = @"Turn Off Passcode";
-    self.reenterPasscodeString = @"Re-enter your passcode";
-    self.reenterNewPasscodeString = @"Re-enter your new passcode";
-    self.enterNewPasscodeString = @"Enter your new passcode";
-    self.touchIDString = @"Unlock using Touch ID";
->>>>>>> 69a68959562928a5ba2323aab24be2ef26859525
+    self.touchIDString = @"使用指紋解鎖";
 }
 
 
